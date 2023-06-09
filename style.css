@@ -22,6 +22,11 @@ body p{
     font-family: 'Poppins';
     font-size: 1.38vw;
 }
+h3{
+    font-family: 'Vidaloka';
+    text-align: center;
+    font-size: 3.35vw;
+}
 /*------ NAVIGASI ------*/
 nav{
     position: fixed;
@@ -170,6 +175,51 @@ nav a{
 
 .btn :active {
     opacity: .5;
+  }
+
+  /*----- SERTIFIKAT ------*/
+  .sertifikat-con{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sertifikat-container{
+    display: flex;
+    padding: 1rem;
+    gap: 3rem;
+    margin: auto;
+  }
+  .card-box{
+    display: flex;
+    background: #EDE9E3;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 20px;
+    gap: 18px;
+  }
+  .isi-serti{
+    flex: 1 1 auto;
+    padding: 1rem;
+  }
+
+  .isi-serti h6{
+    font-family: "poppins";
+    font-size: 1.5vw;
+    font-weight: 100;
+  }
+  .isi-serti p{
+    font-size: 1.3vw;
+  }
+
+  .kursus{
+    color:rgba(0, 0, 0, 0.61);
+  }
+
+  .isi-serti button{
+
+    align-items: center;
   }
 
 /*----- CONTACT -----*/
