@@ -1,3 +1,260 @@
-#about {
+/*----- UNIVERSAL -----*/
+.container{
+    padding: 5vw 8vw;
+    background-color: #EDE9E3;
+    margin: 0;
+}
+
+.container2{
     background-color: #D1C7BD;
+    margin: 0;
+    padding: 5vw 8vw ;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+body p{
+    font-family: 'Poppins';
+    font-size: 1.38vw;
+}
+/*------ NAVIGASI ------*/
+nav{
+    position: fixed;
+    margin: 0;
+    background-color:rgba(255, 255, 255, 0.8);
+    width: 100%;
+}
+.contet {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0.5rem;
+}
+
+.kanan{
+    display: flex;
+    align-items: center;
+}
+
+.kanan img{
+    width: 4.5vw;
+    height: 4.5vw;
+}
+
+.kanan h6{
+    font-size: 1vw;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 1rem;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+nav a{
+    text-decoration-line: none;
+    color: black;
+    padding-left: 4vw;
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+/*----- HOME -----*/
+#home{
+    display: flex;
+    padding-top: 8vw;
+    min-height: 80vh;
+    align-items: center;
+}
+.isi-home{
+    padding-left: 8.3vw;
+    
+}
+.isi-home h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    font-size: 3.35vw;
+    line-height: normal;
+}
+
+.isi-home h5{
+    font-family: 'Abel', sans-serif;
+    font-weight: 100;
+    font-size: 1.67vw;
+}
+.isi-home hr{
+    border: 1px solid #000000;
+}
+
+#imghome{
+    height: 34.72vw;
+}
+/*----- ABOUT -----*/
+#about {
+    text-align: center;
+    font-family: 'Vidaloka';
+    font-size: 2.1vw;
+}
+
+#about p{
+    text-align: justify;
+    font-size: 1.5vw;
+}
+#kucing {
+    border-radius: 100%;
+    height: 20vw;
+}
+#btncont{
+    background: #5D4132;
+    border: 2px solid #5D4132;
+    color: white;
+}
+#btncont:hover,
+#btncont:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: black;
+  border: 2px solid black;
+}
+
+#btncont :active {
+    opacity: .5;
+  }
+
+
+/*----- BUTTON -----*/
+.btn{
+    background: #D1C7BD;
+    border: 2px solid #D1C7BD;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 1.5vw;
+    font-weight: 800;
+    line-height: 1.5vw;
+    min-height: 40px;
+    outline: 0;
+    padding: 1vw 1.7vw;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+
+}
+
+.btn:hover,
+.btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: black;
+  border: 2px solid black;
+}
+
+.btn :active {
+    opacity: .5;
+  }
+
+/*----- CONTACT -----*/
+#contact{
+    margin: auto;
+    
+    
+}
+.contact-kontainer{
+    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+    background: #fff;
+    padding: 4rem;
+    margin-top: 6rem;
+    text-align: right;
+
+    border-radius: 5px;
+    
+}
+.heading p{
+    font-family: 'Lora', serif;
+    font-size: 1.67vw;
+    text-align: center;
+}
+.heading h2{
+    font-family: 'Poppins';
+    font-size: 2.7vw;
+    font-weight: 100;
+    text-align: center;
+}
+.isi-form{
+    margin-bottom: 4rem;
+    
+}
+.isi-form label{
+    font-family: 'Poppins';
+    font-size: 1.3vw;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+}
+
+.input{
+    color: #333;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    font-size: 1.3vw;
+    letter-spacing: 0;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 200;
+    font-family: 'Poppins';
+}
+
+#btncon{
+    background: #5D4132;
+    border: 2px solid #5D4132;
+    color: white;
+}
+#btncon:hover,
+#btncon:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: black;
+  border: 2px solid black;
+}
+
+#btncon:active {
+    opacity: .5;
+  }
+/*----- FOOTER -----*/
+footer{
+    width: 100%;
+    background-color: #3A2D28;
+    min-height: 13.2vw;
+    
+  }
+
+.imgfoot{
+    justify-content: space-around;
+    display: flex;
+    padding: 4.1vw 29vw;
+}
+
+footer img{
+    width: 5vw;
+    display: inline-block;
 }

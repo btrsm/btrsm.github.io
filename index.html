@@ -7,66 +7,169 @@
     <title>Portfolio</title>
 </head>
 <link href="style.css" rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Vidaloka' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 <body>
     <nav>
-        <img src="profileNav.png" alt="profile">
-        <p>Betris Merilin Gunawan</p>
-        <ul>
-            <li> <a href="#home">home</a></li>
-            <li> <a href="#about">about</a></li>
-            <li> <a href="#store">store</a></li>
-            <li> <a href="#contact">contact</a></li>
-        </ul>
+        <div class="contet">
+            <div class="kanan">
+                <img src="profileNav.png" alt="profile">
+                <h6>Betris Merilin Gunawan</h6>
+            </div>
+        
+            <ul>
+                <li> <a href="#home">home</a></li>
+                <li> <a href="#about">about</a></li>
+                <li> <a href="#skill">skill</a></li>
+                <li> <a href="#contact">contact</a></li>
+            </ul>
+        </div>
+        
     </nav>
 
-    <div class="container" id="wrapper">
-        <div id="home">
-            <img src="bintang.png" alt="bintang">
-            <img src="bintang.png" alt="bintang">
-            <img src="home.png" alt="profile home">
-            <h1>Hi, my name is</h1> 
-            <h1>Betris Merilin Gunawan</h1>
-            <hr>
-            <h5>I’m a business women and also love programming </h5>
-        </div>
+    
+        <section class="container" id="home" >
+            <div class="imghome">
+                <img src="home.png" alt="profile home" id="imghome">
+            </div>
+            
+            <div class="isi-home">
+                <h1>Hi, my name is</h1> 
+                <h1>Betris Merilin Gunawan</h1>
+                <hr>
+                <h5>I’m a business women and also love programming </h5>
+            </div>
+            
+        </section>
 
-        <div id="about">
-            <img src="ghibli 1.png" alt="">
-            <img src="ghibli2.png" alt="">
-            <img src="ghibli3.png" alt="">
+        <section class="container2" id="about" >
+            <img id="kucing" src="ghibli3.png" alt="">
             <h2>About me</h2>
-            <p>Hai everyone, my name is Betris Merilin Gunawan nice to meet you!! I have a small business and I love programming. 
+            <p>Hai everyone, my name is Betris Merilin Gunawan nice to meet you!! I have a small business and I love programming. I’am digital business Student from Widya Dharma University in Pontianak. Coding has been my passion and hobby since I was 19 years old.</p>
 
-                I live in Pontianak, Indonesia. I was born in ketapang, 18 March 2003. I’am digital business Student from Widya Dharma University in Pontianak.
-                
-                Coding has been my passion and hobby since I was 19 years old, . Besides coding, I love listening to music. My favorite genres are K-RnB. I like watching film too. I love watching K-drama or Korean movie and anime (especially Demon Slayer and Ghibli Studio).
-                
-                I also have a small business engaged in fashion, especially bead accessories. You guys can check it out my business here. 
-                
-                I'm open to Job opportunities and collaboration where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
-                <button>Contact Me</button>
-        </div>
+            <p> I also have a small business engaged in fashion, especially bead accessories. You guys can check it out my business <a href="https://www.instagram.com/bebeadss.id/" target="_blank">here</a>. </p>
+            <p>I'm open to Job opportunities and collaboration where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p> 
+            <br>
+            <a href="#contact"><button class="btn" id="btncont" role="button">Contact Me</button></a>
+        </section>
 
-        <div id="skill">
-            <h2>My Skills</h2>
+        <div class="container" id="skill" >
             <section id="hardskill">
+                <h2>My Skills</h2> 
                 <img src="vektor code.png" alt="">
                 <h3>Proramming skills</h3>
                 <div class="hardskill" id="programmings">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <P>JS</P>
-                    <P>SQL</P>
-                    <P>Java</P>
-                    <P>GitHub</P>
-                    <p>Cloud</p>
+                    <p class="isi-hardskill">HTML</p>
+                    <p class="isi-hardskill">CSS</p>
+                    <P class="isi-hardskill">JS</P>
+                    <P class="isi-hardskill">SQL</P>
+                    <P class="isi-hardskill">Java</P>
+                    <P class="isi-hardskill">GitHub</P>
+                    <p class="isi-hardskill">Cloud</p>
                 </div>
 
+                <h3>Business Skills</h3>
                 <div class="hardskill" id="bisnis">
-                    <p>Digital Marketing</p>
+                    <p class="isi-hardskill">Digital Marketing</p>
+                    <p class="isi-hardskill">Data Analysis</p>
+                    <p class="isi-hardskill">CopyWriting</p>
+                    <p class="isi-hardskill">Content Creator</p>
+                    <p class="isi-hardskill">Customer Relation Management</p>
+                    <p class="isi-hardskill">Search Engine Optimization (SEO)</p>
                 </div>
             </section>
+
+            <section id="sertifikat" >
+                <h2>My Certification</h2>
+                <div id="sertifikat-sql">
+
+                    <h6>Belajar Dasar Structured Query Language (SQL)</h6>
+                    <p>Dicoding</p>
+                    <p>berhasil mempelajari berbagai konsep dasar data science mulai dari konsep dasar data dan basis data hingga berlatih basic query.</p>
+                    <a href="https://www.dicoding.com/certificates/N9ZO6OQLDXG5" target="_blank">
+                        <button class="btn" >detail</button>
+                    </a>
+                </div>
+                <div id="sertifikat-vd">
+
+                    <h6>Belajar Dasar Visualisasi Data</h6>
+                    <p>Dicoding</p>
+                    <p>berhasil mempelajari teknik dasar untuk representasi hasil secara visual sehingga dapat menceritakan dan mempresentasikan data secara efektif.</p>
+                    <a href="https://www.dicoding.com/certificates/JLX1GOYVGZ72" target="_blank">
+                        <button class="btn" >detail</button>
+                    </a>
+                </div>
+                <div id="sertifikat-aws">
+
+                    <h6>Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)</h6>
+                    <p>Dicoding</p>
+                    <p>berhasil mempelajari materi dasar Cloud dengan menggunakan AWS, dari konsep cloud computing, hingga cara membangun arsitektur yang baik.</p>
+                    <a href="https://www.dicoding.com/certificates/QLZ916VQ9P5D" target="_blank">
+                        <button class="btn" >detail</button>
+                    </a>
+                </div>
+            </section>
+
         </div>
+
+        <div class="container2" id="contact" > 
+            <div class="heading">
+                <h2>CONTACT</h2>
+                <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+            </div>
+            
+            <div class="contact-kontainer">
+                <form action="">
+                    <div class="isi-form">
+                        <label for="name">Name</label>
+                        <input type="text" required placeholder="John Doe" class="input" pattern="[A-Za-z]+" title="Nama berupa karakter huruf">
+                    </div>
+                    
+                    <div class="isi-form">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email"  class="input"required placeholder="johndoe@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="input email anda dengan benar">
+                    </div>
+                    
+                    <div class="isi-form">
+                        <label for="message">Message</label>
+                        <textarea placeholder="Your Message" id="message" cols="30" rows="10" class="input"></textarea>
+                    </div>
+                    <button id="btncon" class="btn">Submit</button>
+                </form>
+            </div>
+            
+        </div>
+    
+
+    <footer>
+        <div class="imgfoot">
+        <a href="https://discord.com/user/btrsm_" target="_blank">
+            <img src="discord.png" alt="my discord">
+        </a>
+
+        <a href="https://t.me/kimdong0" target="_blank">
+            <img src="telegram.png" alt="my telegram">
+        </a>
+
+        <a href="https://github.com/btrsm" target="_blank">
+            <img src="github.png" alt="my github">
+        </a>
+
+        <a href="https://www.instagram.com/btrsm/" target="_blank">
+            <img src="instagram.png" alt="my instagram">
+        </a>
+
+        <a href="https://www.linkedin.com/in/betris-merilin-gunawan-b04906250/" target="_blank">
+            <img src="linkin.png" alt="my link.in" >
+        </a>
     </div>
+    </footer>
 </body>
 </html>
