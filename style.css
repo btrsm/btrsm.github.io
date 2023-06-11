@@ -26,6 +26,7 @@ h3{
     font-family: 'Vidaloka';
     text-align: center;
     font-size: 3.35vw;
+    font-weight: 400;
 }
 /*------ NAVIGASI ------*/
 nav{
@@ -150,8 +151,7 @@ nav a{
     display: inline-block;
     font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
     font-size: 1.5vw;
-    font-weight: 800;
-    line-height: 1.5vw;
+    font-weight: 700;
     min-height: 40px;
     outline: 0;
     padding: 1vw 1.7vw;
@@ -177,16 +177,73 @@ nav a{
     opacity: .5;
   }
 
+  /*----- SKILL -----*/
+  .skill-con{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+  }
+
+  .hardskill-con{
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .hardskill{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.7vw;
+    gap: 0.5vw;
+}
+.skill-box{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+.isi-hardskill-b{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0.5vw;
+gap: 20px;
+background: #FFFFFF;
+border-radius: 10px;
+}
+
+h4{
+    font-family: 'poppins';
+    font-size: 1.8vw;
+}
+
+.subskill{
+    display: flex;
+}
+
+.subskill hr{
+    glyph-orientation-horizontal: 0deg;
+}
   /*----- SERTIFIKAT ------*/
   .sertifikat-con{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    
   }
   .sertifikat-container{
     display: flex;
-    padding: 1rem;
-    gap: 3rem;
-    margin: auto;
+    padding-top: 3rem;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    
+    
   }
   .card-box{
     display: flex;
@@ -194,20 +251,21 @@ nav a{
     box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 0px 0px 20px;
-    gap: 18px;
+    word-wrap: break-word;
+    min-width: 0;
+    flex-direction: column;
   }
   .isi-serti{
-    flex: 1 1 auto;
+    
     padding: 1rem;
   }
 
-  .isi-serti h6{
+  .judul-serti{
     font-family: "poppins";
-    font-size: 1.5vw;
-    font-weight: 100;
+    font-size: 1.7vw;
+    
   }
   .isi-serti p{
     font-size: 1.3vw;
@@ -217,9 +275,16 @@ nav a{
     color:rgba(0, 0, 0, 0.61);
   }
 
-  .isi-serti button{
+  .card-box img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+  }
 
-    align-items: center;
+  .btndetail{
+    padding-left: 40%;
+
   }
 
 /*----- CONTACT -----*/
@@ -308,3 +373,50 @@ footer img{
     width: 5vw;
     display: inline-block;
 }
+
+/*----- class col-----*/
+@media only screen and (min-width: 340px) {
+    /* For tablets: */
+    .col-h-1 {width: 8.33%;}
+    .col-h-2 {width: 16.66%;}
+    .col-h-3 {width: 25%;}
+    .col-h-4 {width: 33.33%;}
+    .col-h-5 {width: 41.66%;}
+    .col-h-6 {width: 50%;}
+    .col-h-7 {width: 58.33%;}
+    .col-h-8 {width: 66.66%;}
+    .col-h-9 {width: 75%;}
+    .col-h-10 {width: 83.33%;}
+    .col-h-11 {width: 91.66%;}
+    .col-h-12 {width: 100%;}
+  }
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
