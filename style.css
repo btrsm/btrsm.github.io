@@ -104,8 +104,8 @@ nav{
 }
 
 .kanan img{
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 3rem;
+
 }
 
 .kanan h6{
@@ -168,7 +168,7 @@ nav a{
 
 #about p{
     text-align: justify;
-    font-size: 1.5vw;
+    
 }
 #kucing {
     border-radius: 100%;
@@ -345,8 +345,6 @@ h4{
 /*----- CONTACT -----*/
 #contact{
     margin: auto;
-    
-    
 }
 .contact-kontainer{
     box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
@@ -424,7 +422,7 @@ footer{
 }
 
 footer img{
-    width: 5vw;
+    width: 4vw;
     display: inline-block;
 }
 
